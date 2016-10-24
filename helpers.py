@@ -18,7 +18,8 @@ def movingaverage1D(data, n_pts):
 def RemovePauses(datas, pauses):
     ''' remove pauses from data
     datas = list of 1D arrays to remove pauses from
-    pauses = list of lists of the start and stop indecies of each pause'''
+    pauses = list of lists of the start and stop indecies of each pause. 
+        Pauses can be listed in any order'''
 	
     dataps = []
     for i in range( 0,len(datas) ):
