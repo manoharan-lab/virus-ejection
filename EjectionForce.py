@@ -23,7 +23,7 @@ def ejection_force_calc(L, F0, c, Rout = 19.4, z = 37.9, psi_p = 50., kBT = 1.38
     All input parameters except for geom should be floats. geom should be a string.
     Returns ejection force. '''
     
-    if L == 0: # L = 0 causes the zero-finder below to fail, but I can do this force calculation by hand.
+    if L <= 0: # L <= 0 causes the zero-finder below to fail, but I can do this force calculation by hand.
         return 0.0
     
     if geom == 'cyl':
