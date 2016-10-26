@@ -134,3 +134,14 @@ def save_dict(filename, params, delimiter = ','):
         #write line
         f.write(outline+'\n')
     f.close()
+    
+def to_odd(value):
+    '''coverts value to the nearest odd integer, where value is some scalar
+    if value is an even integer the ouput is value+1
+    '''
+    valuemod2 = value%2
+    if valuemod2 < 1:
+        value = int(value) + 1
+    else:
+        value = int(value)
+    return value
